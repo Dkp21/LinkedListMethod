@@ -24,6 +24,7 @@ public:
             temp = temp->next;
         }
         
+        // Head node to be deleted
         if(n == len)
         {
             ListNode *d = head;
@@ -34,6 +35,7 @@ public:
         ListNode *curr = head;
         ListNode *prev = nullptr;
         
+        // Node to be deleted is in the middle
         for(int i = 0; i < (len - n); ++i)
         {
             prev = curr;
